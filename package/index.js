@@ -59,4 +59,18 @@ function scpm(radius){
 function table(num){
     return [num*1,num*2,num*3,num*4,num*5,num*6,num*7,num*8,num*9,num*10,];
 }
-module.exports = {clog,cerr,sqr,cwarn,cinfo,cbug,ctrace,ctbl,cclr,hlf,binarytochar,raise,rpm,cpm,scpm,table,tpm,mult}
+function docid(vari) {
+    if (typeof vari === 'number') {
+        console.error("Argument should not be a number");
+        return null; // Return null to indicate an invalid argument
+    }
+    return document.getElementById(vari);
+}
+function doclass(vari) {
+    if (typeof vari === 'number') {
+        console.error("Argument should not be a number");
+        return null; // Return null to indicate an invalid argument
+    }
+    return document.getElementsByClassName(vari);
+}
+module.exports = {clog,cerr,sqr,cwarn,cinfo,cbug,ctrace,ctbl,cclr,hlf,binarytochar,raise,rpm,cpm,scpm,table,tpm,mult,docid,doclass}

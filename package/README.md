@@ -41,3 +41,6 @@ methods available :-------------------------------------------------------------
 
 17.table(num) :- writes table of given argument
 
+18.docid :- document.getElementById();
+
+19.doclass :- document.getElementsByClassName();
