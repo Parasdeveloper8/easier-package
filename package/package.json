@@ -1,6 +1,6 @@
 {
   "name": "easier-jsever",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "use short methods instead of long methods",
   "main": "index.js",
   "scripts": {
