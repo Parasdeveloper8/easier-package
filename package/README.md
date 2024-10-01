@@ -44,3 +44,5 @@ methods available :-------------------------------------------------------------
 18.docid :- document.getElementById();
 
 19.doclass :- document.getElementsByClassName();
+
+20.stringToBinary() :- string to binary

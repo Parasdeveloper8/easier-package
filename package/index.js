@@ -33,11 +33,36 @@ function hlf(numb){
     return numb/2;
 }
 function binarytochar(binary) {
-    return binary.split(' ')
-        .map(b => String.fromCharCode(parseInt(b, 2)))
-        .join('');
-}
+    // Ensure binary is a string
+    if (typeof binary !== 'string') {
+        binary = String(binary);
+    }
 
+    // Now you can safely use .split()
+    const binaryArray = binary.split(' ');
+    
+    // Process the binaryArray to get characters
+    let result = '';
+    binaryArray.forEach(bin => {
+        result += String.fromCharCode(parseInt(bin, 2));
+    });
+    
+    return result;
+}
+function stringToBinary(str) {
+    let binaryString = '';
+
+    for (let char of str) {
+        // Get ASCII value of character and convert to binary
+        const binary = char.charCodeAt(0).toString(2);
+        // Pad with leading zeros to make it 8 bits (if necessary)
+        const paddedBinary = binary.padStart(8, '0');
+        // Append to the result
+        binaryString += paddedBinary + ' '; // Adding space for separation (optional)
+    }
+
+    return binaryString.trim(); // Remove trailing space
+}
 function raise(base,exponent){
      return Math.pow(base,exponent);
 }
