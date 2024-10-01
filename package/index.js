@@ -99,4 +99,4 @@ function doclass(vari) {
     return document.getElementsByClassName(vari);
 }
 
-module.exports = {clog,cerr,sqr,cwarn,cinfo,cbug,ctrace,ctbl,cclr,hlf,binarytochar,raise,rpm,cpm,scpm,table,tpm,mult,docid,doclass}
+module.exports = {clog,cerr,sqr,cwarn,cinfo,cbug,ctrace,ctbl,cclr,hlf,binarytochar,raise,rpm,cpm,scpm,table,tpm,mult,docid,doclass,stringToBinary}
