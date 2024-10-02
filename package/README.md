@@ -3,7 +3,19 @@ Use many methods of console in short
 ___________________________________________________________
 *author:-paras prajapat*
 **github:-parasdeveloper8**
+___________________________________________________________
+step1:-**npm i easier-jsever**
 
+step2:-**import {clog} from "easier-jsever";**
+
+       Or
+
+ you can also do -**const {clog,cerr} = require("easier-jsever");**
+
+step3:-**Use like this**
+       **const a = "name";**
+       **clog(a);**//name
+____________________________________________________________
 methods available :----------------------------------------------------------------
 
 1.clog("This is a log message.");
