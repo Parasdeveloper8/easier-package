@@ -1,23 +1,42 @@
-#Built with javascript for easy javascipt
-Use many methods of console in short
-___________________________________________________________
-*author:-paras prajapat*
-**github:-parasdeveloper8**
-___________________________________________________________
+# easier-jsever
+
+## Details
+
+This is lightweight,easy to use package which helps you in javascript development.
+Sometimes you probably think ,Can't I write some methods in short but this package is for you .
+*Lets start with an example*
+
+**Examples**
+
+Here is a javascript code :-
+ ```javascript
+     console.log("hello");
+```
+
+with this package:-
+```javascript
+   clog("hello");
+```
+**Here is way to use this package .Follow these instructions**
+
+
 step1:-**npm i easier-jsever**
 
-step2:-**import {clog} from "easier-jsever";**
+```javascript
+step2:-import {clog} from "easier-jsever";
 
        Or
 
- you can also do -**const {clog,cerr} = require("easier-jsever");**
+ you can also do -const {clog,cerr} = require("easier-jsever");
 
-step3:-**Use like this**
-       **const a = "name";**
-       **clog(a);**//name
+step3:-Use like this
+       const a = "name";
+       clog(a);//name
+ ```
 ____________________________________________________________
-methods available :----------------------------------------------------------------
+### Methods available :----------------------------------------------------------------
 
+```javascript
 1.clog("This is a log message.");
 
 2.cerr("This is an error message.");
@@ -30,7 +49,8 @@ methods available :-------------------------------------------------------------
 
 6.ctrace("This is a trace message.");
 
-##const sampleArray = [{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }];
+const sampleArray = [{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }];
+
 7.ctbl(sampleArray);
 
 8.cclr():-console.clear();
@@ -58,3 +78,6 @@ methods available :-------------------------------------------------------------
 19.doclass :- document.getElementsByClassName();
 
 20.stringToBinary() :- string to binary
+```
+*author:-paras prajapat*
+**github:-parasdeveloper8**
