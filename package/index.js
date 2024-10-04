@@ -1,38 +1,38 @@
-function clog(any){
+export function clog(any){
     console.log(any);
 }
-function cerr(eny){
+export function cerr(eny){
     console.error(eny);
 }
-function sqr(num) {
+export function sqr(num) {
     if (typeof num !== 'number') {
         cerr('Input must be a number');
         return null;
     }
     return Math.sqrt(num);
 }
-function cwarn(txt){
+export function cwarn(txt){
     console.warn(txt);
 }
-function cinfo(txt){
+export function cinfo(txt){
     console.info(txt);
 }
-function cbug(txt){
+export function cbug(txt){
     console.debug(txt);
 }
-function ctrace(txt){
+export function ctrace(txt){
     console.trace(txt);
 }
-function ctbl(arr){
+export function ctbl(arr){
     console.table(arr);
 }
-function cclr(){
+export function cclr(){
     console.clear();
 }
-function hlf(numb){
+export function hlf(numb){
     return numb/2;
 }
-function binarytochar(binary) {
+export function binarytochar(binary) {
     // Ensure binary is a string
     if (typeof binary !== 'string') {
         binary = String(binary);
@@ -49,7 +49,7 @@ function binarytochar(binary) {
     
     return result;
 }
-function stringToBinary(str) {
+export function stringToBinary(str) {
     let binaryString = '';
 
     for (let char of str) {
@@ -63,40 +63,42 @@ function stringToBinary(str) {
 
     return binaryString.trim(); // Remove trailing space
 }
-function raise(base,exponent){
+export function raise(base,exponent){
      return Math.pow(base,exponent);
 }
-function mult(a,b){
+export function mult(a,b){
      return a*b;
 }
-function tpm(a,b,c){
+export function tpm(a,b,c){
     return a + b + c;
 }
-function rpm(a,b,c,d){
+export function rpm(a,b,c,d){
     return a + b + c + d;
 }
-function cpm(radius){
+export function cpm(radius){
     return 2*Math.PI*radius;
 }
-function scpm(radius){
+export function scpm(radius){
     return Math.PI*radius**2;
 }
-function table(num){
+export function table(num){
     return [num*1,num*2,num*3,num*4,num*5,num*6,num*7,num*8,num*9,num*10,];
 }
-function docid(vari) {
+export function docid(vari) {
     if (typeof vari === 'number') {
         console.error("Argument should not be a number");
         return null; // Return null to indicate an invalid argument
     }
     return document.getElementById(vari);
 }
-function doclass(vari) {
+export function doclass(vari) {
     if (typeof vari === 'number') {
         console.error("Argument should not be a number");
         return null; // Return null to indicate an invalid argument
     }
     return document.getElementsByClassName(vari);
 }
+export const jsonfy = (obj)=> JSON.stringify(obj);
 
-module.exports = {clog,cerr,sqr,cwarn,cinfo,cbug,ctrace,ctbl,cclr,hlf,binarytochar,raise,rpm,cpm,scpm,table,tpm,mult,docid,doclass,stringToBinary}
+export const listenevnt =(event,dom,cb) => dom.addEventListener(event,cb);
+

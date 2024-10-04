@@ -6,6 +6,8 @@ This is lightweight,easy to use package which helps you in javascript developmen
 Sometimes you probably think ,Can't I write some methods in short but this package is for you .
 *Lets start with an example*
 
+**This supports ES modules**
+
 **Examples**
 
 Here is a javascript code :-
@@ -78,6 +80,13 @@ const sampleArray = [{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }];
 19.doclass :- document.getElementsByClassName();
 
 20.stringToBinary() :- string to binary
+
+21.jsonfy(obj) :- used to stringify JSON
+
+22.listenevnt(event,dom,cb):-
+  event("click","change","submit",etc.),
+  dom :- Element's variable on which you wanna put event listener,
+  cb :- function of what will it do 
 ```
 *author:-paras prajapat*
 **github:-parasdeveloper8**
