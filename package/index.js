@@ -98,6 +98,14 @@ export function doclass(vari) {
     }
     return document.getElementsByClassName(vari);
 }
+export function statement (condition,ifoutput,elseoutput){
+       if(condition){
+           console.log(ifoutput);
+       }
+       else{
+           console.log(elseoutput);
+       }
+}
 export const jsonfy = (obj)=> JSON.stringify(obj);
 
 export const listenevnt =(event,dom,cb) => dom.addEventListener(event,cb);

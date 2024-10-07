@@ -8,6 +8,8 @@ Sometimes you probably think ,Can't I write some methods in short but this packa
 
 **This supports ES modules**
 
+**Best for react and backend development**
+
 **Examples**
 
 Here is a javascript code :-
@@ -87,6 +89,19 @@ const sampleArray = [{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }];
   event("click","change","submit",etc.),
   dom :- Element's variable on which you wanna put event listener,
   cb :- function of what will it do 
+
+23. statement (condition,ifoutput,elseoutput):-
+  condition:- 10 > 5,
+  ifoutput:- if condition is true,console.log(ifoutput);
+  elseoutput :- else it will console.log(elseoutput);
+
+  ex:-
+  let condtn  = 10 >5 ;
+  let a = true;
+  let b = false;
+  statement(condtn, a,b);
+  //true
+  //you can use any variable name
 ```
 *author:-paras prajapat*
 **github:-parasdeveloper8**
