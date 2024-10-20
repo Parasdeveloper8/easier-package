@@ -102,6 +102,15 @@ const sampleArray = [{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }];
   statement(condtn, a,b);
   //true
   //you can use any variable name
+24.sqr(num) :- Returns square root of given number
+
+25.cuboidTsa(length, breadth, height) :- Returns total surface area of cuboid
+
+26.cuboidLsa(length, breadth, height) :- Returns lateral surface area of cuboid
+
+27.cuboidVolume(length, breadth, height) :- Returns volume of cuboid
+
+28.cuboidDiagonal(length, breadth, height) :- Returns diagonal of cuboid
 ```
 *author:-paras prajapat*
 **github:-parasdeveloper8**

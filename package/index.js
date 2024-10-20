@@ -106,6 +106,22 @@ export function statement (condition,ifoutput,elseoutput){
            console.log(elseoutput);
        }
 }
+export function cuboidTsa(length, breadth, height) {
+    return 2 * (length * breadth + breadth * height + height * length);
+}
+
+export function cuboidLsa(length, breadth, height) {
+    return 2 * (length + breadth) * height;
+}
+
+export function cuboidVolume(length, breadth, height) {
+    return length * breadth * height;
+}
+
+export function cuboidDiagonal(length, breadth, height) {
+    return Math.sqrt(length ** 2 + breadth ** 2 + height ** 2);
+}
+
 export const jsonfy = (obj)=> JSON.stringify(obj);
 
 export const listenevnt =(event,dom,cb) => dom.addEventListener(event,cb);
